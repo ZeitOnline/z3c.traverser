@@ -2,10 +2,10 @@
 CHANGES
 =======
 
-2.1 (unreleased)
-----------------
+2.0.0+notests (2025-08-01)
+--------------------------
 
-- Nothing changed yet.
+- Remove ``zope.testrunner`` from main dependencies, it's test-only
 
 
 2.0 (2023-02-09)

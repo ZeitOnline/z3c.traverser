@@ -42,7 +42,7 @@ TESTS_REQUIRE = [
 ]
 
 setup(name='z3c.traverser',
-      version='2.1.dev0',
+      version='2.0.0+notests',
       author='Zope Foundation and Contributors',
       author_email='zope-dev@zope.dev',
       description='Pluggable Traversers And URL handling utilities',
@@ -93,7 +93,6 @@ setup(name='z3c.traverser',
           'zope.publisher',
           'zope.traversing',
           'zope.viewlet',
-          'zope.testrunner',
       ),
       include_package_data=True,
       zip_safe=False,
