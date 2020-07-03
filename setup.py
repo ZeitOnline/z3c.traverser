@@ -59,7 +59,7 @@ TESTS_REQUIRE = [
 ]
 
 setup(name='z3c.traverser',
-      version='1.0.1.dev0',
+      version='1.0.0+notests',
       author='Zope Corporation and Contributors',
       author_email='zope-dev@zope.org',
       description='Pluggable Traversers And URL handling utilities',
@@ -100,10 +100,6 @@ setup(name='z3c.traverser',
       extras_require = dict(
           test=TESTS_REQUIRE,
       ),
-      setup_requires=[
-          'zope.testrunner>=4.3.1',
-          'eggtestinfo',
-      ],
       install_requires=(
           'setuptools',
           'zope.component',
@@ -112,7 +108,6 @@ setup(name='z3c.traverser',
           'zope.publisher',
           'zope.traversing',
           'zope.viewlet',
-          'zope.testrunner',
       ),
       tests_require=TESTS_REQUIRE,
       test_suite='__main__.alltests',
