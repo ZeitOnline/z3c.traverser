@@ -15,7 +15,7 @@
 """
 import os.path
 
-from setuptools import find_packages
+from setuptools import find_namespace_packages
 from setuptools import setup
 
 
@@ -78,7 +78,7 @@ setup(name='z3c.traverser',
       ],
       url='https://github.com/zopefoundation/z3c.traverser',
       license='ZPL 2.1',
-      packages=find_packages('src'),
+      packages=find_namespace_packages('src'),
       package_dir={'': 'src'},
       namespace_packages=['z3c'],
       python_requires='>=3.7',
@@ -86,7 +86,6 @@ setup(name='z3c.traverser',
           test=TESTS_REQUIRE,
       ),
       install_requires=(
-          'setuptools',
           'zope.component',
           'zope.contentprovider',
           'zope.interface',
